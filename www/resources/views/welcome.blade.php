@@ -15,10 +15,10 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: #FDC17C;
                 font-family: 'Nunito','Open Sans', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                height: 100%;
                 margin: 0;
             }
 
@@ -51,7 +51,7 @@
             }
 
             .navbar > a {
-                color: #636b6f;
+                color: #FDC17C;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -59,39 +59,63 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
+            
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            
+            .parallax {
+                /* The image used */
+                background-image: url('https://www.goodfreephotos.com/albums/food/cooking-ingredients-with-avocado-mushrooms-eggs.jpg');
+
+                /* Full height */
+                height: 100%; 
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+            @media only screen and (max-device-width: 1366px) {
+                .parallax {
+                background-attachment: scroll;
+                }
             }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+        <div class="parallax">
+            <div class="flex-center position-ref full-height">
+                @if (Route::has('login'))
+                    <div class="top-right links">
+                        @auth
+                            <a href="{{ url('/home') }}">Home</a>
+                        @else
+                            <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}">Register</a>
+                            @endif
+                        @endauth
+                    </div>
+                @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Recipiely
-                </div>
+                <div class="content">
 
-                <div class="navbar">
-                    <a href="https://laravel.com/docs">Recipies</a>
-                    <a href="https://laracasts.com">Drinks</a>
-                    <a href="https://laravel-news.com">Home</a>
-                    <a href="https://blog.laravel.com">Videos</a>
-                    <a href="https://nova.laravel.com">Healthy Eating</a>
+                        <div class="title m-b-md">
+                            Recipiely
+                        </div>
+
+                        <div class="navbar">
+                            <a href="https://laravel.com/docs">Recipies</a>
+                            <a href="https://laracasts.com">Drinks</a>
+                            <a href="index.php">Home</a>
+                            <a href="https://blog.laravel.com">Videos</a>
+                            <a href="https://nova.laravel.com">Healthy Eating</a>
+                        </div>
                 </div>
             </div>
         </div>
