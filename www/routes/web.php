@@ -20,3 +20,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'recipes'], function()
+{ 
+    Route::get('/list', 'RecipeController@list')->name('recipe-list');
+    Route::get('/list/{id?}', 'RecipeController@edit_get')->name('recipe-edit');
+    Route::post('/list/{id?}', 'RecipeController@edit_post');
+
+});
