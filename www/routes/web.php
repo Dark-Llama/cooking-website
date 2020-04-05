@@ -27,8 +27,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'recipes'], function()
 { 
-    Route::get('/list', 'RecipeController@list')->name('recipe-list');
-    Route::get('/list/{id?}', 'RecipeController@edit_get')->name('recipe-edit');
-    Route::post('/list/{id?}', 'RecipeController@edit_post');
+    Route::get('/list',         'RecipeController@list_get')->name('recipe-list');
+    Route::get('/edit/{id?}',   'RecipeController@edit_get')->name('recipe-edit');
+    Route::post('/edit/{id?}',  'RecipeController@edit_post');
 
 });

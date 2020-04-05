@@ -22,19 +22,55 @@ class RecipeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function list()
+    public function list_get()
     {
-        $receipe = new Recipe();
-        $receipe->user_id = auth()->user()->id;
-        $receipe->title = 'veggie soup';
-        $receipe->blurb = 'blah blah soup!!';
-        $receipe->instructions = 'mmmmmm';        
-        $receipe->ingredients = 'soup, vegies';
-        $receipe->save();
-        
         $recipes = Recipe::where('user_id', auth()->user()->id)->get();
-        dd($recipes);
+        // dd($recipes);
         
-        return view('recipes-list');
+        return view('recipe-list', ['recipes' => $recipes]);
+    }
+    
+    // ------------------------------------------------------------------------
+    
+    public function edit_get($id=null)
+    {
+        $recipe = Recipe::find($id);
+        if (!is_null($recipe))
+        {
+            // Checks who owns recipe
+            if ($recipe->user_id != auth()->user()->id) abort(403);
+        }
+        else
+        {
+            $recipe = new Recipe();
+        }
+        
+        return view('recipe-edit', ['recipe' => $recipe]);
+    }
+    
+    // ------------------------------------------------------------------------
+    
+    public function edit_post($id=null)
+    {
+        $recipe = Recipe::find($id);
+        if (!is_null($recipe))
+        {
+            // Checks who owns recipe
+            if ($recipe->user_id != auth()->user()->id) abort(403);
+        }
+        else
+        {
+            $recipe = new Recipe();
+            $recipe->user_id = auth()->user()->id;
+        }
+
+        $recipe->title = request()->title;
+        $recipe->blurb = request()->blurb;
+        $recipe->instructions = request()->instructions;        
+        $recipe->ingredients = request()->ingredients;
+        $recipe->save();
+        
+        return redirect(route('recipe-list'));
+        // dd(request()->all());
     }
 }
