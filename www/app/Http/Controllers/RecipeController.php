@@ -14,7 +14,7 @@ class RecipeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => ['view_get']]);
     }
 
     /**
@@ -68,9 +68,19 @@ class RecipeController extends Controller
         $recipe->blurb = request()->blurb;
         $recipe->instructions = request()->instructions;        
         $recipe->ingredients = request()->ingredients;
+        $recipe->healthy = request()->healthy == 'on';
         $recipe->save();
         
         return redirect(route('recipe-list'));
         // dd(request()->all());
+    }
+    
+    // ------------------------------------------------------------------------
+    
+    public function view_get($id)
+    {
+        $recipe = Recipe::findOrFail($id);
+        
+        return view('recipe-view', ['recipe' => $recipe]);
     }
 }
