@@ -14,7 +14,7 @@ class RecipeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['view_get']]);
+        $this->middleware('auth', ['except' => ['view_get', 'browse_get']]);
     }
 
     /**
@@ -24,7 +24,7 @@ class RecipeController extends Controller
      */
     public function list_get()
     {
-        $recipes = Recipe::where('user_id', auth()->user()->id)->get();
+        $recipes = Recipe::where('user_id', auth()->user()->id)->paginate(10);
         // dd($recipes);
         
         return view('recipe-list', ['recipes' => $recipes]);
@@ -81,6 +81,25 @@ class RecipeController extends Controller
     {
         $recipe = Recipe::findOrFail($id);
         
-        return view('recipe-view', ['recipe' => $recipe]);
+        return view('recipe-view', ['recipe' => $recipe, 'owner' => auth()->user()->id]);
+    }
+    
+    // ------------------------------------------------------------------------
+    
+    public function browse_get()
+    {
+        $healthy_only = request()->has('healthy-only');
+        // dd($filter_healthy_only);
+        
+        $filter_link = link_to(route('browser'), 'all receipes');
+        $filter_link = link_to(route('browser'), 'healthy');
+        
+        $recipes_query = Recipe::whereNotNull('id');
+        if ($healthy_only) $recipes_query->where('healthy', true);
+        $recipes = $recipes_query->orderBy('id')->paginate(10);
+        
+        $user_id = (auth()->check()) ? auth()->user()->id : null;
+        
+        return view('recipe-list', ['recipes' => $recipes, 'owner' => $user_id, 'filter_link' => $filter_link]);
     }
 }

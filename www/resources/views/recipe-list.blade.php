@@ -8,6 +8,12 @@
                 <div class="card-header">{{ __('My Recipes') }}</div>
 
                 <div class="card-body">
+                    
+                    if (@$filter_link)
+                        <a class="btn btn-light" href=""> </a>
+                        <p>{!! $filter_url !}}</p>
+                    @endif
+                    
                     @if(count($recipes) > 0) 
                         @foreach($recipes as $recipe)
                                 <div>
@@ -20,13 +26,17 @@
                                 <div>
                                     <p>{{$recipe->blurb}}</p>
                                     <div>
-                                        <a class="btn btn-light" href="{{url(route('recipe-edit',$recipe->id))}}">Edit</a>
+                                        @if($owner == $recipe->user_id)
+                                            <a class="btn btn-light" href="{{url(route('recipe-edit',$recipe->id))}}">Edit</a>
+                                        @endif
                                         <a class="btn btn-light" href="{{url(route('recipe-edit',$recipe->id))}}">View</a>
                                     </div>
                                     {{--<p>{!!nl2br(e($recipe->ingredients))!!}</p>
                                     <p>{!!nl2br(e($recipe->instructions))!!}</p>--}}
                                 </div>
                         @endforeach
+                    
+                    <p>{!!$recipes->links()!!}</p>
                     @else
                         <p>No recipes, yet!</p>
                     @endif

@@ -31,5 +31,6 @@ Route::group(['prefix' => 'recipes'], function()
     Route::get('/edit/{id?}',   'RecipeController@edit_get')->name('recipe-edit');
     Route::get('/view/{id}',    'RecipeController@view_get')->name('recipe-view');
     Route::post('/edit/{id?}',  'RecipeController@edit_post');
+    Route::get('/',             'RecipeController@browse_get')->name('browse-get');
 
 });

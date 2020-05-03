@@ -17,7 +17,7 @@
         <div class="parallax">
             <div class="flex-center position-ref full-height">
                 <div class="top-left">
-                    <img src="{{ URL::to('/public/assets/img/RecipielyLogo.png') }}">
+                    <!-- Logo Here -->
                 </div>
                 @if (Route::has('login'))
                 <div class="top-right links">
