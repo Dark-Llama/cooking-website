@@ -25,6 +25,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/about', 'StaticController@about')->name('about');
+
 Route::group(['prefix' => 'recipes'], function()
 { 
     Route::get('/list',         'RecipeController@list_get')->name('recipe-list');
