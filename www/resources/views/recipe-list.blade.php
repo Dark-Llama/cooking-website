@@ -9,9 +9,8 @@
 
                 <div class="card-body">
                     
-                    if (@$filter_link)
-                        <a class="btn btn-light" href=""> </a>
-                        <p>{!! $filter_url !}}</p>
+                    @if (@$filter_link)
+                        <p>{!! $filter_link !!}</p>
                     @endif
                     
                     @if(count($recipes) > 0) 

@@ -91,8 +91,10 @@ class RecipeController extends Controller
         $healthy_only = request()->has('healthy-only');
         // dd($filter_healthy_only);
         
-        $filter_link = link_to(route('browser'), 'all receipes');
-        $filter_link = link_to(route('browser'), 'healthy');
+        if ($healthy_only)
+            $filter_link = link_to(route('browser'), 'Clear Filter');
+        else
+            $filter_link = link_to(route('browser').'?healthy-only=1', 'Healthy Recipes Only');
         
         $recipes_query = Recipe::whereNotNull('id');
         if ($healthy_only) $recipes_query->where('healthy', true);
