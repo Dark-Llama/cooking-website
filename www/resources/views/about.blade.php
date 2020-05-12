@@ -1,53 +1,72 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="about-section">
-      <h1>About Us Page</h1>
-      <p>Some text about who we are and what we do.</p>
-      <p>Resize the browser window to see that this page is responsive by the way.</p>
-    </div>
+<header>
+	<div class="parallax" style="background: url('assets/img/cooking-dumplings-in-the-kitchen-on-the-wooden-table-198-small.jpg');">
 
-    <h2 style="text-align:center">Our Team</h2>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
+		<div class="container">
 
-      <div class="column">
-        <div class="card">
-          <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-          <div class="container">
-            <h2>Mike Ross</h2>
-            <p class="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
+			<h1>Behind the recipe</h1>
 
-      <div class="column">
-        <div class="card">
-          <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-          <div class="container">
-            <h2>John Doe</h2>
-            <p class="title">Designer</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
+			<div class="row">
+
+				<div class="col-md-6">
+					<h3 class="pt-3">"I always found it hard to find good recipes for healthy food"</h3>
+					<p>"So I created this, a place for people to find healthy recipes that just work."</p>
+				</div>
+
+				<div class="col-md-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</header>
+
+<section class="text-center mt-5 mb-5">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-4">
+				<h4>Blah Blah Blah</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+			</div>
+
+			<div class="col-md-4">
+				<h4>Blah Blah Blah</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+			</div>
+
+			<div class="col-md-4">
+				<h4>Blah Blah Blah</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-4">
+				<img class="img-fluid img-thumbnail" src="assets/img/.jpg" alt="img" >
+			</div>
+
+			<div class="col-4">
+				<img class="img-fluid img-thumbnail" src="assets/img/.jpg" alt="img" >
+			</div>
+
+			<div class="col-4">
+				<img class="img-fluid img-thumbnail" src="assets/img/.jpg" alt="img">
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
 @endsection
