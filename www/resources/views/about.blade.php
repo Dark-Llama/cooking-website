@@ -16,7 +16,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat.</p>
 				</div>
 
 			</div>
