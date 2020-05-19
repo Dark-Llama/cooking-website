@@ -10955,12 +10955,7 @@ body {
   }
 }
 
-/* Sticky Footer CSS */
-
-html {
-  position: relative;
-  min-height: 100%;
-}
+/* Footer CSS */
 
 .footer {
   position: absolute;

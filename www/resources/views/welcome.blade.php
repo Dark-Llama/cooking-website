@@ -39,9 +39,9 @@
                     </div>
 
                     <div class="links">
-                        <a href="https://laravel.com/docs">Top Recipes</a>
-                        <a href="https://laracasts.com">Home</a>
-                        <a href="https://laravel-news.com">Healthy Eating</a>
+                        <a href="{{ route('home') }}">Dashboard</a>
+                        <a href="{{ route('browser') }}">Top Recipes</a>
+                        <a href="{{ route('healthy') }}">Healthy Eating</a>
                     </div>
                 </div>
             </div>

@@ -10,4 +10,9 @@ class StaticController extends Controller
     {
         return view('about');
     }
+
+    public function healthy()
+    {
+    	return view('healthy');
+    }
 }

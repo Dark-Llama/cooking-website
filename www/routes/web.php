@@ -26,6 +26,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/about', 'StaticController@about')->name('about');
+Route::get('/healthy', 'StaticController@healthy')->name('healthy');
 
 Route::group(['prefix' => 'recipes'], function()
 { 
