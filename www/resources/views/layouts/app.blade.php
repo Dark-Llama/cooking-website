@@ -78,75 +78,74 @@
         <!-- Footer -->
         <footer class="page-footer font-small blue pt-4">
 
-            <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
 
-                <!-- Grid row -->
-                <div class="row">
+                    <!-- Grid row -->
+                    <div class="row">
 
-                    <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">
 
-                        <!-- Content -->
-                        <h5 class="text-uppercase">Recipiely</h5>
-                        <p>Follow us on social media to keep up to date with the latest ideas for your kitchen.</p>
+                            <!-- Content -->
+                            <h5 class="text-uppercase">Recipiely</h5>
+                            <p>Follow us on social media to keep up to date with the latest ideas for your kitchen.</p>
 
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">
+
+                            <!-- Links -->
+                            <h5 class="text-uppercase">Pages</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="{{ route('home') }}">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('browser') }}">Browse</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('about') }}">About</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('healthy') }}">Healthy Eating</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">
+
+                            <!-- Links -->
+                            <h5 class="text-uppercase">Social Media</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Linked In</a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none pb-3">
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3">
-
-                        <!-- Links -->
-                        <h5 class="text-uppercase">Pages</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="{{ route('home') }}">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('browser') }}">Browse</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('about') }}">About</a>
-                            </li>
-                            <li>
-                                <a href="#!">Sitemap</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3">
-
-                        <!-- Links -->
-                        <h5 class="text-uppercase">Social Media</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Instagram</a>
-                            </li>
-                            <li>
-                                <a href="#!">Facebook</a>
-                            </li>
-                            <li>
-                                <a href="#!">Twitter</a>
-                            </li>
-                            <li>
-                                <a href="#!">Linked In</a>
-                            </li>
-                        </ul>
-
-                    </div>
-            </div>
-          </div>
+                </div>
 
           <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">© 2020 Copyright: Luke Wyn-Harris
-          </div>
+          <div class="footer-copyright text-center py-3">© 2020 Copyright: Luke Wyn-Harris</div>
 
         </footer>
     </div>

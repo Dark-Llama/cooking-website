@@ -16,7 +16,6 @@
 				</div>
 
 				<div class="col-md-6">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat.</p>
 				</div>
 
 			</div>
@@ -34,18 +33,18 @@
 		<div class="row">
 
 			<div class="col-md-4">
-				<h4>Blah Blah Blah</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+				<h4>Breakfasts are hard</h4>
+				<p>So we make them easy, our expansive database of user contributed breakfast recipes will give you the best start to the day.</p>
 			</div>
 
 			<div class="col-md-4">
-				<h4>Blah Blah Blah</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+				<h4>Lunch with the whanau? We got you covered</h4>
+				<p>If you need to whip up something quick for yourself, or are preparing a extensive meal for your whanau we have recipes to suit everyones needs, by sorting healthy recipes only you can make sure that everyone is getting what they need.</p>
 			</div>
 
 			<div class="col-md-4">
-				<h4>Blah Blah Blah</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget risus rhoncus, posuere massa ut, semper dolor. Aenean cursus risus in volutpat condimentum. Praesent quis nibh arcu. Ut venenatis euismod sapien at feugiat. Sed orci orci, pharetra at felis id, ultrices commodo urna. In faucibus vestibulum purus at sollicitudin. Maecenas vitae orci ante. Donec aliquet ullamcorper tempor. Praesent eget varius ipsum. Praesent eget dictum nisi.</p>
+				<h4>Whether it's dinner with friends or just for one, look no further!</h4>
+				<p>With recipes ranging in difficulty and size, you can find something thats delicious and healthy for anyone!</p>
 			</div>
 
 		</div>
@@ -53,15 +52,15 @@
 		<div class="row">
 
 			<div class="col-4">
-				<img class="img-fluid img-thumbnail" src="assets/img/.jpg" alt="img" >
+				<img class="img-fluid img-thumbnail" src="assets/img/Breakfast!.jpg" alt="Breakfast" >
 			</div>
 
 			<div class="col-4">
-				<img class="img-fluid img-thumbnail" src="assets/img/.jpg" alt="img" >
+				<img class="img-fluid img-thumbnail" src="assets/img/A_late_lunch.jpg" alt="Lunch" >
 			</div>
 
 			<div class="col-4">
-				<img class="img-fluid img-thumbnail" src="assets/img/.jpg" alt="img">
+				<img class="img-fluid img-thumbnail" src="assets/img/food-homemade-dinner-party.jpg" alt="Dinner">
 			</div>
 
 		</div>
