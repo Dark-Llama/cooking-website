@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="background-img" style="background: url('assets/img/cooking-dumplings-in-the-kitchen-on-the-wooden-table-198-small.jpg'); ">
+	<div class="background-img background-img-1">
 		<div class="container">
 
 			<h1>Healthy Eating</h1>

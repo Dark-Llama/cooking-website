@@ -10947,9 +10947,24 @@ body {
 
 .background-img {
   background-image: url(/images/cooking-ingredients-with-avocado-mushrooms-eggs.jpg?c96b69a91ba6f07afeb225299c7613e7);
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.background-img-1 {
+  background-image: url(/images/food-homemade-dinner-party.jpg?594796f3505c1181d68095c3f68a5862);
+}
+
+.background-img-2 {
+  background-image: url(/images/food-cooking-baking-kitchen.jpg?0982c5c0c45b405277e3acc19e235a67);
+}
+
+.background-img-3 {
+  background-image: url(/images/breakfast-4250077_960_720.jpg?fc00a2356c8bed02c4b3bb09ec70c345);
+}
+
+.background-img-4 {
+  background-image: url(/images/Breakfast.jpg?2d6036db03c4e599a1fb5d92812546ad);
 }
 
