@@ -14,7 +14,7 @@
 
     </head>
     <body>
-        <div class="parallax">
+        <div class="background-img">
             <div class="flex-center position-ref full-height">
                 <div class="top-left">
                     <!-- Logo Here -->

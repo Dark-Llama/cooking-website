@@ -2,7 +2,7 @@
 
 @section('content')
 <header>
-	<div class="parallax" style="background: url('assets/img/cooking-dumplings-in-the-kitchen-on-the-wooden-table-198-small.jpg');">
+	<div class="background-img" style="background: url('assets/img/cooking-dumplings-in-the-kitchen-on-the-wooden-table-198-small.jpg'); background-repeat: no-repeat;">
 
 		<div class="container">
 
