@@ -2,7 +2,7 @@
 
 @section('content')
 <header>
-	<div class="background-img" style="background: url('assets/img/cooking-dumplings-in-the-kitchen-on-the-wooden-table-198-small.jpg'); background-repeat: no-repeat;">
+	<div class="background-img background-img-2">
 
 		<div class="container">
 
@@ -52,7 +52,7 @@
 		<div class="row">
 
 			<div class="col-4">
-				<img class="img-fluid img-thumbnail" src="assets/img/Breakfast!.jpg" alt="Breakfast" >
+				<img class="img-fluid img-thumbnail" src="assets/img/Breakfast.jpg" alt="Breakfast" >
 			</div>
 
 			<div class="col-4">
