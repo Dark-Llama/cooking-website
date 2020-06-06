@@ -95,7 +95,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
         <!-- Footer -->
@@ -127,10 +127,10 @@
 
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="{{ route('home') }}">Dashboard</a>
+                                    <a href="{{ route('recipe-list') }}">My Recipes</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('browser') }}">Browse</a>
+                                    <a href="{{ route('browser') }}">All Recipes</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('about') }}">About</a>
