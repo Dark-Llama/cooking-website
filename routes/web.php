@@ -30,7 +30,7 @@ Route::get('/healthy', 'StaticController@healthy')->name('healthy');
 
 Route::group(['prefix' => 'recipes'], function()
 { 
-    Route::get('/list',         'RecipeController@list_get')->name('recipe-list');
+    Route::get('/mine',         'RecipeController@list_get')->name('recipe-list');
     Route::get('/edit/{id?}',   'RecipeController@edit_get')->name('recipe-edit');
     Route::get('/view/{id}',    'RecipeController@view_get')->name('recipe-view');
     Route::post('/edit/{id?}',  'RecipeController@edit_post');

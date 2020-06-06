@@ -27,7 +27,7 @@ class RecipeController extends Controller
         $recipes = Recipe::where('user_id', auth()->user()->id)->paginate(10);
         // dd($recipes);
         
-        return view('recipe-list', ['recipes' => $recipes]);
+        return view('recipe-list', ['recipes' => $recipes, 'owner' => auth()->user()->id, 'page_title' => 'My Recipes']);
     }
     
     // ------------------------------------------------------------------------
@@ -101,6 +101,6 @@ class RecipeController extends Controller
         
         $user_id = (auth()->check()) ? auth()->user()->id : null;
         
-        return view('recipe-list', ['recipes' => $recipes, 'owner' => $user_id, 'filter_link' => $filter_link]);
+        return view('recipe-list', ['recipes' => $recipes, 'owner' => $user_id, 'filter_link' => $filter_link, 'page_title' => 'All Recipes']);
     }
 }
