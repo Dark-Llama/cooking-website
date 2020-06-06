@@ -21,7 +21,7 @@
                                     <p>{{$recipe->blurb}}</p>
                                     <div>
                                         <a class="btn btn-light" href="{{url(route('recipe-edit',$recipe->id))}}">Edit</a>
-                                        <a class="btn btn-light" href="{{url(route('recipe-edit',$recipe->id))}}">View</a>
+                                        <a class="btn btn-light" href="{{url(route('recipe-view',$recipe->id))}}">View</a>
                                     </div>
                                     {{--<p>{!!nl2br(e($recipe->ingredients))!!}</p>
                                     <p>{!!nl2br(e($recipe->instructions))!!}</p>--}}

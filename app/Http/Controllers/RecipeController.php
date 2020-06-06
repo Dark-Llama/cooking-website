@@ -81,7 +81,7 @@ class RecipeController extends Controller
     {
         $recipe = Recipe::findOrFail($id);
         
-        return view('recipe-view', ['recipe' => $recipe, 'owner' => auth()->user()->id]);
+        return view('recipe-view', ['recipe' => $recipe, 'owner' => auth()->check() ? auth()->user()->id : null]);
     }
     
     // ------------------------------------------------------------------------
@@ -89,7 +89,6 @@ class RecipeController extends Controller
     public function browse_get()
     {
         $healthy_only = request()->has('healthy-only');
-        // dd($filter_healthy_only);
         
         if ($healthy_only)
             $filter_link = link_to(route('browser'), 'Clear Filter');
