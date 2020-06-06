@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="links">
-                        <a href="{{ route('home') }}">Dashboard</a>
+                        <a href="{{ route('about') }}">About</a>
                         <a href="{{ route('browser') }}">Top Recipes</a>
                         <a href="{{ route('healthy') }}">Healthy Eating</a>
                     </div>
