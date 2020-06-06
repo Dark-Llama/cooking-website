@@ -9,12 +9,12 @@
 			<div class="row">
 
 				<div class="col-md-6">
-					<h3 class="pt-3">If you want to eat more healthy, use our Healthy Sorting system and this handyg guide to do so easily.</h3>
+					<h3 class="pt-3">If you want to eat more healthy, use our Healthy Sorting system and this handy guide to do so easily.</h3>
 					<p>
 				</div>
 
 				<div class="col-md-6">
-					<p>If you want to get started just sort the recipes by healthy only, this will only show you recipes that have been deemed healthy according this this guide.</p>
+					<p>If you want to get started just sort the recipes by healthy only, this will only show you recipes that have been deemed healthy according this this guide. Otherwise keep reading for more healthy tips!</p>
 				</div>
 
 			</div>
