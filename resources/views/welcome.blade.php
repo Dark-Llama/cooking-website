@@ -14,11 +14,8 @@
 
     </head>
     <body>
-        <div class="background-img">
+        <div class="background-img banner-darken banner-darken-components">
             <div class="flex-center position-ref full-height">
-                <div class="top-left">
-                    <!-- Logo Here -->
-                </div>
                 @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -35,7 +32,7 @@
 
                 <div class="content">
                     <div class="title m-b-md">
-                        Recipiely
+                        <p>Recipiely</p>
                     </div>
 
                     <div class="links">

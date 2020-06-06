@@ -2,7 +2,7 @@
 
 @section('content')
 <header>
-	<div class="background-img background-img-2">
+	<div class="background-img background-img-2 banner-darken banner-darken-components">
 
 		<div class="container">
 

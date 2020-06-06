@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="background-img background-img-1">
+	<div class="background-img background-img-1 banner-darken banner-darken-components">
 		<div class="container">
 
 			<h1>Healthy Eating</h1>

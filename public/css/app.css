@@ -10885,7 +10885,7 @@ a.text-dark:focus {
 html,
 body {
   background-color: #ab5c03;
-  color: #fb9118;
+  color: #fbc17c;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   height: 100vh;
@@ -10921,7 +10921,7 @@ body {
 }
 
 .links > a {
-  color: #fb9118;
+  color: #fbc17c;
   padding: 0 25px;
   font-size: 13px;
   font-weight: 600;
@@ -10960,5 +10960,31 @@ footer {
 
 .background-img-4 {
   background-image: url(/images/Breakfast.jpg?2d6036db03c4e599a1fb5d92812546ad);
+}
+
+.banner-darken {
+  position: relative;
+}
+
+.banner-darken:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-darken-components h1,
+h2,
+h3,
+h4,
+p,
+a,
+title {
+  position: relative;
+  z-index: 1;
 }
 
